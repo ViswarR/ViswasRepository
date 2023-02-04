@@ -1,0 +1,77 @@
+{
+	"name": "csvinput",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ViswasAzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": ".csv",
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "#",
+				"type": "String"
+			},
+			{
+				"name": "Name",
+				"type": "String"
+			},
+			{
+				"name": "Type 1",
+				"type": "String"
+			},
+			{
+				"name": "Type 2",
+				"type": "String"
+			},
+			{
+				"name": "Total",
+				"type": "String"
+			},
+			{
+				"name": "HP",
+				"type": "String"
+			},
+			{
+				"name": "Attack",
+				"type": "String"
+			},
+			{
+				"name": "Defense",
+				"type": "String"
+			},
+			{
+				"name": "Sp. Atk",
+				"type": "String"
+			},
+			{
+				"name": "Sp. Def",
+				"type": "String"
+			},
+			{
+				"name": "Speed",
+				"type": "String"
+			},
+			{
+				"name": "Stage",
+				"type": "String"
+			},
+			{
+				"name": "Legendary",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

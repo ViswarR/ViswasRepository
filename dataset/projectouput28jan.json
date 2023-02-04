@@ -1,0 +1,84 @@
+{
+	"name": "projectouput28jan",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_25jan2023",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "output25jan"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "tweet_id",
+				"type": "String"
+			},
+			{
+				"name": "airline_sentiment",
+				"type": "String"
+			},
+			{
+				"name": "airline_sentiment_confidence",
+				"type": "String"
+			},
+			{
+				"name": "negativereason",
+				"type": "String"
+			},
+			{
+				"name": "negativereason_confidence",
+				"type": "String"
+			},
+			{
+				"name": "airline",
+				"type": "String"
+			},
+			{
+				"name": "airline_sentiment_gold",
+				"type": "String"
+			},
+			{
+				"name": "name",
+				"type": "String"
+			},
+			{
+				"name": "negativereason_gold",
+				"type": "String"
+			},
+			{
+				"name": "retweet_count",
+				"type": "String"
+			},
+			{
+				"name": "text",
+				"type": "String"
+			},
+			{
+				"name": "tweet_coord",
+				"type": "String"
+			},
+			{
+				"name": "tweet_created",
+				"type": "String"
+			},
+			{
+				"name": "tweet_location",
+				"type": "String"
+			},
+			{
+				"name": "user_timezone",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

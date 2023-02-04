@@ -1,0 +1,44 @@
+{
+	"name": "csvout",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ViswasAzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "output"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Variance",
+				"type": "String"
+			},
+			{
+				"name": "Skewness",
+				"type": "String"
+			},
+			{
+				"name": "Curtosis",
+				"type": "String"
+			},
+			{
+				"name": "Entropy",
+				"type": "String"
+			},
+			{
+				"name": "Class",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

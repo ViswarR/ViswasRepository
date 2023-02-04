@@ -1,0 +1,69 @@
+{
+	"name": "getmetadata2dynamic",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_25jan2023",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"foldername": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": {
+					"value": "@dataset().foldername",
+					"type": "Expression"
+				},
+				"container": "input25jan"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Pregnancies",
+				"type": "String"
+			},
+			{
+				"name": "Glucose",
+				"type": "String"
+			},
+			{
+				"name": "BloodPressure",
+				"type": "String"
+			},
+			{
+				"name": "SkinThickness",
+				"type": "String"
+			},
+			{
+				"name": "Insulin",
+				"type": "String"
+			},
+			{
+				"name": "BMI",
+				"type": "String"
+			},
+			{
+				"name": "DiabetesPedigreeFunction",
+				"type": "String"
+			},
+			{
+				"name": "Age",
+				"type": "String"
+			},
+			{
+				"name": "Outcome",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

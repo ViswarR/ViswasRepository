@@ -1,0 +1,9 @@
+{
+	"name": "ADF-ViswasReniguntla123",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "84044977-9a58-4088-afef-fabd1c85ad50",
+		"tenantId": "d1339117-a764-461b-9a63-bc1e78592eaf"
+	}
+}

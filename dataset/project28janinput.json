@@ -1,0 +1,85 @@
+{
+	"name": "project28janinput",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_25jan2023",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": ".csv",
+				"container": "project"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "name",
+				"type": "String"
+			},
+			{
+				"name": "school_rating",
+				"type": "String"
+			},
+			{
+				"name": "size",
+				"type": "String"
+			},
+			{
+				"name": "reduced_lunch",
+				"type": "String"
+			},
+			{
+				"name": "state_percentile_16",
+				"type": "String"
+			},
+			{
+				"name": "state_percentile_15",
+				"type": "String"
+			},
+			{
+				"name": "stu_teach_ratio",
+				"type": "String"
+			},
+			{
+				"name": "school_type",
+				"type": "String"
+			},
+			{
+				"name": "avg_score_15",
+				"type": "String"
+			},
+			{
+				"name": "avg_score_16",
+				"type": "String"
+			},
+			{
+				"name": "full_time_teachers",
+				"type": "String"
+			},
+			{
+				"name": "percent_black",
+				"type": "String"
+			},
+			{
+				"name": "percent_white",
+				"type": "String"
+			},
+			{
+				"name": "percent_asian",
+				"type": "String"
+			},
+			{
+				"name": "percent_hispanic",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
